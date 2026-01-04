@@ -21,19 +21,19 @@
             <img id="logo"src="images\Logo-removebg-preview.png">
             <h1>Terra Invest Co.</h1>
          </div>   
-         <div id="sign"><a href="login-register - Copy/login.html" id="a1"> Sign In</a></div>
+         <div id="sign"><a href="#" onclick="login()" id="a1"> Sign In</a></div>
     </header>
     <!--Home section-->
 
     <section class="home" id="home">
         <div class="wrapper">
            
-                <div class="box" style="background: url(images/b12.png) no-repeat;">
+                <div class="box" style="background: url(images/farm-5836815_1920.jpg) no-repeat;">
                 <div class="content">
                     <span>Terra Invest Co.</span>
                     <h3>OWN YOUR HORIZON</h3>
-                    <p>The land for your dream home is waiting.</p>
-                    <a href="login-register - Copy/login.html" class="btn">DISCOVER ACREAGE</a>
+                    <p>"Preeminent acreage for those who demand a broader perspective."</p>
+                    <a href="" class="btn">DISCOVER ACREAGE</a>
                 </div>
                 </div>  
         </div>
@@ -161,7 +161,41 @@
         </div>
     </section>
     
-    
+      <!-- hidden Div-->
+       <div id="login">
+        <button onclick="cclose()" id="c1"><svg xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+</svg></button>
+        <h1>login</h1><br>
+        <form action="php/login.php" method="POST" id="f1">
+        <input type="email" placeholder="Email ID" class="inpl1"     name="email">
+        <input type="password" placeholder="Password" class="inpl1"  name="password"><br>
+        <input type="submit" id="lbtn" placeholder="Login"           name="login">
+        <div id="text">
+             New to Terra Invest?
+            <a href="#" onclick="register()">Create your account</a>
+        </div>
+        </form>
+       </div>
+       
+       <div id="register">
+        <button onclick="cclose()" id="c2"><svg xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+</svg></button>
+
+        <h1>Register</h1><br>
+         <form action="php/register.php" method="POST" id="f2">
+            <input type="text" placeholder="Enter Full Name"      name="fullname" class="inpl2">
+            <input type="email" placeholder="Enter Email"         name="email" class="inpl2">
+            <input type="password" placeholder="Enter Password"   name="password"  class="inpl2">
+            <input type="submit" id="rbtn" placeholder="Register" name="register">
+             <div id="text">
+             Already have an account ?
+            <a href="#" onclick="login()">Login Here</a>
+            </div>
+
+        </form>
+       </div>
     <section class="footer">
 
         <div class="box-container">
